@@ -1,5 +1,8 @@
 //Exercicio 1
-  <!--Significado de automovel-->
+  <!--Significado de automovel
+  Descreva em no máximo 200 palavras o que é um automóvel e o que ele faz. Liste os substantivos e verbos separadamente. Cada substantivo corresponde a um objeto que precisará ser construído para implementar um sistema, nesse caso, um carro. Selecione 5 dos objetos que você listou e, para cada um, liste vários atributos e comportamentos. Descreva brevemente como esses objetos interagem entre si e com outros objetos na sua descrição. Estes passos que você seguiu são típicos do projeto orientado a objetos.
+  
+  -->
 Carro; qualquer veículo que, movido a motor, se destina ao transporte de pessoas ou cargas.
 Objetos:
 *Freio: serve como forma de para parar o veículo, sem ele o automovel não iria parar.
