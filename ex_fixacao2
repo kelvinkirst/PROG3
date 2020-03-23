@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Kelvin Kirst</title>
+  </head>
+  <body>
+    <?php
+class Carro{
+  public $modelo;
+  public $velocidadeMaxima;
+  public $velocidadeAtual;
+  
+  public function Carro($modelo_, $velocidadeMaxima_){
+    $this-> modelo = $modelo_;
+    $this-> velocidadeMaxima = $velocidadeMaxima_;
+      echo "<br> {$this-> setModelo()} </br>";
+    $this-> ligarCarro();
+    $this-> acelerar();
+    $this-> reduzir();
+    $this-> pararCarro();
+    $this-> desligarCarro();
+  }
+  
+  public function ligarCarro(){
+      echo "<br>Carro ligado</br>";
+  }
+  
+  public function desligarCarro(){
+    echo "<br>Carro desligado</br>";
+  }
+  
+  public function acelerar(){
+    $this-> velocidadeAtual = $this-> velocidadeMaxima;
+    echo "<br>Acelerando...</br>";
+    echo "<br>Velocidade={$this->velocidadeAtual} km/h </br>";
+  }
+  
+  public function setModelo(){
+    return $this-> modelo;
+  }
+  
+  public function reduzir(){
+    $this-> velocidadeAtual = $this->velocidadeAtual / 2;
+    echo "<br>Reduzindo velocidade!</br>";
+    echo "<br>Velocidade={$this->velocidadeAtual} km/h <br>";
+  }
+  
+  public function pararCarro(){
+    $this-> velocidadeAtual = 0;
+    echo "<br>Carro Parado</br>";
+    echo "<br>Velocidade={$this->velocidadeAtual} km/h </br>";
+  }
+
+}
+
+$carro01 = new Carro("BMW X",80);
+?>
